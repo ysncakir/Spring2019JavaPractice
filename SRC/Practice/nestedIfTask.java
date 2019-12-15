@@ -4,7 +4,7 @@ public class nestedIfTask {
 
 public static void main(String[] args) {
 	
-
+	/*
 	Scanner scan = new Scanner(System.in);
     //WRITE YOUR CODE HERE 
     int age = scan.nextInt(); 
@@ -48,18 +48,40 @@ public static void main(String[] args) {
     else {
     	System.out.println( number + " is odd");
     }
+    */
+
+
     
+    System.out.println("Enter item1, count and its price"); 
+    Scanner scan = new Scanner(System.in); 
+    String item1= scan.nextLine();
+    int count1= scan.nextInt(); 
+    double price1 = scan.nextDouble(); 
+    double total = (price1 * count1); 
+    
+    
+    System.out.println("Enter item2, count and its price");
+    Scanner scan2 = new Scanner(System.in); 
+    String item2= scan2.nextLine();
+    int count2= scan2.nextInt(); 
+    double price2 = scan2.nextDouble(); 
+    double total2 = (price2 * count2); 
+    
+   System.out.println("Enter item3, count and its price");
+    Scanner scan3 = new Scanner(System.in); 
+    String item3= scan3.nextLine();
+    int count3= scan3.nextInt(); 
+    double price3 = scan3.nextDouble();
+    double total3 = (price3 * count3); 
 
 
-
-
-
-
-
-
-
-
-
+    double totalPrice1 = count1>0 ? count1*price1 : 0; 
+    double totalPrice2 = count1>0 ? count2*price2 : 0; 
+    double totalPrice3 = count3>0 ? count3*price3 : 0; 
+    
+    double report = totalPrice1 + totalPrice2 + totalPrice3; 
+    
+    System.out.println("Total price: "+ report);
 
 
 

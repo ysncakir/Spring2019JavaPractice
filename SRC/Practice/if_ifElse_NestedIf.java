@@ -1,5 +1,5 @@
 package Practice;
-
+import java.util.Scanner; 
 public class if_ifElse_NestedIf {
 
 	 
@@ -302,12 +302,56 @@ public static void main(String[] args) {
 		// 70-80 CC
 		// <70 F
 		
-		
+		Scanner scan = new Scanner(System.in);
+	    
+	    System.out.println("Welcome to Cybertek Apartments!");
+	    System.out.println("Number of bedrooms you are interested:");
+	    int numberOfBedrooms = scan.nextInt();
+	    int startingPrice=0;
+	    //WRITE YOUR CODE HERE
+	      int startingPrice1= 1100; 
+		    int startingPrice2= 1850; 
+		    int startingPrice3= 2550;
+		    if (numberOfBedrooms ==1){
+		     System.out.println("One bedroom selected"); 
+		     System.out.println("Starting price: "+ startingPrice1);
+		    }
+		    else if (numberOfBedrooms ==2){
+		     System.out.println("Two bedroom selected"); 
+		     System.out.println("Starting price: "+ startingPrice2);
+		    }
+		    else if (numberOfBedrooms ==3){
+		     System.out.println("Three bedroom selected"); 
+		     System.out.println("Starting price: "+ startingPrice3);
+		    }
+		    else {
+		      System.out.println("No such Bedrooms available"); 
+		    }	
 
 		
 		
 		
-		
+		    Scanner input = new Scanner(System.in); 
+		    System.out.println("Enter first number:"); 
+		    int num1 = input.nextInt(); 
+		    System.out.println("Enter second number:"); 
+		    int num2 = input.nextInt();
+		    System.out.println("Enter third number:");
+		    int num3 = input.nextInt(); 
+		    
+		    if (num1>num2 && num1<num3 || num1>num3 && num1<num2){
+		      System.out.println("Medium value is: "+ num1);
+		    } 
+		    else if (num2>num1 && num2<num3 || num2>num3 &&num2<num1){
+		      System.out.println("Medium value is: "+ num2);
+		    }
+		    else if(num3>num1 && num3<num2 || num3>num2&&num3<num1){
+		      System.out.println("Medium value is: "+ num3);
+		    }
+		    else {
+		      System.out.println ("Invalid number"); 
+		      
+		    }
 		
 		
 		}
